@@ -22,6 +22,32 @@
 > [!WARNING]  
 > This miniapp is still under development, and may have breaking changes without any notice.
 
+## 功能特性 (Features)
+
+这是一个为有道词典笔设计的工具箱应用，主要功能包括：
+
+**AI 助手** - 一个强大的对话式 AI 工具：
+- 支持 OpenAI 兼容 API 接口，可使用各种大语言模型
+- 提供多轮对话功能，支持上下文记忆
+- 对话历史管理，可创建、搜索、编辑和删除对话
+- 消息编辑和重新生成，支持同一消息的多个变体（variant）
+- 完整的 AI 参数配置：模型选择、温度、TopP、最大长度等
+- 自定义系统提示词（system prompt）
+- 软键盘输入支持，包括中文拼音输入
+- 实时显示账户余额
+
+This is a toolbox application designed for YouDao Dictionary Pen with the following main features:
+
+**AI Assistant** - A powerful conversational AI tool:
+- Supports OpenAI-compatible APIs, allowing use of various large language models
+- Multi-turn conversation with context memory
+- Conversation history management: create, search, edit, and delete conversations
+- Message editing and regeneration with support for message variants
+- Full AI parameter configuration: model selection, temperature, TopP, max length, etc.
+- Custom system prompts
+- Soft keyboard input with Chinese Pinyin support
+- Real-time account balance display
+
 ## Requirements
 
 Users using this miniapp should have a [supported YouDao Dictionary Pen](https://smart.youdao.com/dictPen).
