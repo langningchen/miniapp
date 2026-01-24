@@ -29,7 +29,7 @@ module.exports = function (html) {
 
   var compile = isServer && compiler.ssrCompile && vueOptions.optimizeSSR !== false
     ? compiler.ssrCompile
-    : compiler.compile
+    : compiler.compileTemplate
 
   var compiled = compile(html, compilerOptions)
 

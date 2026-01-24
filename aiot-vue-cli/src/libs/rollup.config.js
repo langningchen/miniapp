@@ -45,7 +45,7 @@ function generateCommonConfig(appMetaOptions, options) {
       customAlias.push({find: key, replacement: path.resolve(info.getAppRoot(), appMetaOptions.alias[key])})
     }
   }
-  const replaceValues = {}
+  const replaceValues = { 'defineComponent': '' }
   if (options.env) {
     for (const item of options.env) {
       const slist = item.split('=')
@@ -67,7 +67,7 @@ function generateCommonConfig(appMetaOptions, options) {
         ...mockSources,
       }),
       nodeResolve(),
-      commonjs(),
+      commonjs(),require('@rollup/plugin-typescript')(),
       pluginApp(),
       pluginImage(),
       assetPlugin(),

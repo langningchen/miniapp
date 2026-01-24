@@ -13,7 +13,7 @@ module.exports = function (content, filename, needMap) {
   var filenameWithHash = filename + '?' + cacheKey
   var output = cache.get(cacheKey)
   if (output) return output
-  output = compiler.parseComponent(content, { pad: 'line' })
+  output = compiler.parse(content, { pad: 'line' }).descriptor
   if (needMap) {
     if (output.script && !output.script.src) {
       output.script.map = generateSourceMap(

@@ -14,7 +14,7 @@ module.exports = function (content, filename, needMap) {
   var output = cache.get(cacheKey)
   if (output) return output
   // TODO: support to use "global" in <style>
-  output = compiler.parseComponent(content, { pad: true })
+  output = compiler.parse(content, { pad: true }).descriptor
   if (needMap) {
     if (output.script && !output.script.src) {
       output.script.map = generateSourceMap(
