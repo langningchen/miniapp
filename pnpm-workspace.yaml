@@ -1,5 +1,6 @@
 packages:
   - 'ui'
+  - 'aiot-vue-cli'
 
 onlyBuiltDependencies:
   - es5-ext

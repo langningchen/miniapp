@@ -1,0 +1,101 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+_createScriptString	rollup-plugins/falcon-vue.js	/^function _createScriptString(script, fileName, scopeId, isFunctional) {$/;"	f
+_createStyleString	rollup-plugins/falcon-vue.js	/^function _createStyleString(styles, fileName, scopeId) {$/;"	f
+amrPath	cli-actions/upload.js	/^var amrPath;$/;"	v
+appPreprocess	rollup-plugins/app.js	/^function appPreprocess() {$/;"	f
+appendKeyFrameCode	steps/build.js	/^function appendKeyFrameCode() {$/;"	f
+assertCustomThemePath	libs/common.js	/^function assertCustomThemePath(styleOpts, lessPaths)$/;"	f
+async.cache	check-update/NcuEnhance.js	/^    const opts = { cache: false, timeout }$/;"	p
+buildErrorMessage	rollup-plugins/falcon-module.js	/^function buildErrorMessage(err, args = [], includeStack = true) {$/;"	f
+cleanStack	rollup-plugins/falcon-module.js	/^function cleanStack(stack) {$/;"	f
+console.log.appID	cli-actions/upload.js	/^    "appID": res2Obj.appid,$/;"	p
+console.log.path	cli-actions/upload.js	/^    "path": res1Obj.fpath,$/;"	p
+const..bmp	rollup-plugins/image.js	/^  '.bmp': 'image\/bmp'$/;"	p
+const..gif	rollup-plugins/image.js	/^  '.gif': 'image\/gif',$/;"	p
+const..jpeg	rollup-plugins/image.js	/^  '.jpeg': 'image\/jpeg',$/;"	p
+const..jpg	rollup-plugins/image.js	/^  '.jpg': 'image\/jpeg',$/;"	p
+const..png	rollup-plugins/image.js	/^  '.png': 'image\/png',$/;"	p
+const.dir	libs/rollup.config.js	/^    dir: info.getFalconBuildDir(),$/;"	p
+const.dom	rollup-plugins/image.js	/^  dom: false,$/;"	p
+const.emitFileName	rollup-plugins/asset.js	/^		emitFileName:defaultName,$/;"	p
+const.entry	webpreview/configs/webpack.dll.config.js	/^    entry: {$/;"	p
+const.exclude	rollup-plugins/image.js	/^  exclude: null,$/;"	p
+const.exports	libs/rollup.config.service.js	/^    exports: 'auto',$/;"	p
+const.external	libs/rollup.config.js	/^    external: ['vue', 'falcon-vue-render'],$/;"	p
+const.external	libs/rollup.config.service.js	/^    external: ['vue', 'falcon-vue-render'],$/;"	p
+const.file	rollup-plugins/image copy.js	/^    file: id,$/;"	p
+const.file	rollup-plugins/image.js	/^    file: id,$/;"	p
+const.filename	webpreview/configs/htmlwebpackplugin.js	/^    filename: '_preview.app.html',$/;"	p
+const.format	libs/rollup.config.js	/^    format: 'es',$/;"	p
+const.format	libs/rollup.config.service.js	/^    format: 'es',$/;"	p
+const.id	rollup-plugins/image copy.js	/^    id: id,$/;"	p
+const.id	rollup-plugins/image.js	/^    id: id,$/;"	p
+const.include	rollup-plugins/asset.js	/^		include:[\/\\.mp4$\/, \/\\.mkv$\/, \/\\.mov$\/, \/\\.avi$\/, \/\\.wmv$\/, \/\\.flv$\/, \/\\.f4v$\/, \/\\.hlv$\/, \/\\.webm$\/]$/;"	p
+const.include	rollup-plugins/image.js	/^  include: null$/;"	p
+const.loader	webpreview/configs/utils.js	/^    loader: 'css-loader',$/;"	p
+const.loader	webpreview/configs/utils.js	/^    loader: 'postcss-loader',$/;"	p
+const.multihtmlCache	webpreview/configs/htmlwebpackplugin.js	/^    multihtmlCache: true,$/;"	p
+const.options	webpreview/configs/utils.js	/^    options: {$/;"	p
+const.pathToRoot	rollup-plugins/image copy.js	/^    pathToRoot: appInfo.pathToRoot(id),$/;"	p
+const.pathToRoot	rollup-plugins/image.js	/^    pathToRoot: appInfo.pathToRoot(id),$/;"	p
+const.publicPath	rollup-plugins/asset.js	/^		publicPath: "",$/;"	p
+const.template	webpreview/configs/htmlwebpackplugin.js	/^    template: path.resolve(__dirname, '..\/web\/preview.html'),$/;"	p
+const.transform	rollup-plugins/asset.js	/^		transform:transformUrl,$/;"	p
+copyDir	steps/build.js	/^function copyDir(dirName)$/;"	f
+defaultName	rollup-plugins/asset.js	/^function defaultName(name){$/;"	f
+deleteBinFiles	cli-actions/simulator.js	/^function deleteBinFiles(folderPath) {$/;"	f
+deleteFolderRecursive	cli-actions/build.js	/^function deleteFolderRecursive(url) {$/;"	f
+download	rollup-plugins/image.js	/^function download(url) {$/;"	f
+exec	cli-actions/simulator.js	/^function exec(cmd, args) {$/;"	f
+exports.cssLoaders	webpreview/configs/utils.js	/^exports.cssLoaders = function (options) {$/;"	f
+extractKeyframes	rollup-plugins/style-json.js	/^function extractKeyframes(id, result) {$/;"	f
+falconModule	rollup-plugins/falcon-module.js	/^function falconModule(opts = {}) {$/;"	f
+filter	rollup-plugins/style-json.js	/^var filter = pluginUtils.createFilter(['**\/*.css', '**\/*.less', '**\/*.sass', '**\/*.stylus']);$/;"	v
+filterPredicate	check-update/NcuVersionUtil.js	/^function filterPredicate(options) {$/;"	f
+function.generateAppEntryFile	webpreview/configs/webpack.common.conf.js	/^function generateAppEntryFile(sourceDir) {$/;"	f
+function.getLessModifyVars	libs/common.js	/^function getLessModifyVars(styleOpts)$/;"	f
+function.getTheme	libs/common.js	/^function getTheme(styleOpts)$/;"	f
+function.image	rollup-plugins/image copy.js	/^function image(opts = {}) {$/;"	f
+generateCommonConfig	libs/rollup.config.js	/^function generateCommonConfig(appMetaOptions, options) {$/;"	f
+generateCommonConfig	libs/rollup.config.service.js	/^function generateCommonConfig(appMetaOptions, options, type) {$/;"	f
+generatePagesImports	rollup-plugins/app.js	/^function generatePagesImports() {$/;"	f
+getFileMd5	steps/manifest.js	/^function getFileMd5(filePath) {$/;"	f
+getImageInfo	rollup-plugins/image copy.js	/^function getImageInfo(id) {$/;"	f
+getImageInfo	rollup-plugins/image.js	/^function getImageInfo(id) {$/;"	f
+getLessPaths.getMockApi	libs/common.js	/^function getMockApi() {$/;"	f
+globalWrap	rollup-plugins/global-wrap.js	/^function globalWrap(opts = {}) {$/;"	f
+httpRequire	webpreview/configs/webpack.common.conf.js	/^function httpRequire(context, request, callback, options){$/;"	f
+image	rollup-plugins/image.js	/^function image(opts = {}) {$/;"	f
+isFileExisted	cli-actions/upload.js	/^function isFileExisted(path_way) {$/;"	f
+isHttpUrl	rollup-plugins/image.js	/^function isHttpUrl(url) {$/;"	f
+markChecked	cli.js	/^function markChecked() {$/;"	f
+modifyInfo	cli-actions/create.js	/^function modifyInfo(distDir, name) {$/;"	f
+module.exports	cli-actions/utils/UploadCliActivity.js	/^module.exports = function (activity) {$/;"	f
+module.exports	cli-actions/utils/UploadInfo.js	/^module.exports = function (event, param) {$/;"	f
+module.exports	rollup-plugins/asset.js	/^module.exports=function(options){$/;"	f
+module.exports	webpreview/configs/webpack.dll.config.js	/^module.exports = function (isBuild) {$/;"	f
+module.exports.internalModules	libs/share.js	/^  internalModules: null,$/;"	p
+module.exports.keyframes	libs/share.js	/^  keyframes:[]$/;"	p
+module.exports.webpackConf	webpreview/index.js	/^  webpackConf: {$/;"	p
+page	cli-actions/upload.js	/^var page;$/;"	v
+port	cli-actions/upload.js	/^var port;$/;"	v
+post0	cli-actions/upload.js	/^function post0(options) {$/;"	f
+postForm	cli-actions/upload.js	/^function postForm(path, files, datas) {$/;"	f
+previewOptions.minify.collapseWhitespace	webpreview/configs/htmlwebpackplugin.js	/^      collapseWhitespace: true$/;"	p
+previewOptions.minify.minifyCSS	webpreview/configs/htmlwebpackplugin.js	/^      minifyCSS: true,$/;"	p
+previewOptions.minify.minifyJS	webpreview/configs/htmlwebpackplugin.js	/^      minifyJS: true,$/;"	p
+previewOptions.minify.removeComments	webpreview/configs/htmlwebpackplugin.js	/^      removeComments: true,$/;"	p
+printLog	rollup-plugins/style-json.js	/^function printLog(id, msgArr) {$/;"	f
+refresh	cli-actions/simulator.js	/^function refresh() {$/;"	f
+satisfiesPeerDependencies	check-update/NcuVersionUtil.js	/^function satisfiesPeerDependencies(versionResult, peerDependencies) {$/;"	f
+style2JSON	rollup-plugins/style-json.js	/^function style2JSON(appMetaOptions, appRoot) {$/;"	f
+syncDirs	steps/build.js	/^function syncDirs() {$/;"	f
+transformUrl	rollup-plugins/asset.js	/^function transformUrl(url){$/;"	f
+validateAppRoot	libs/appinfo.js	/^function validateAppRoot(appRoot, silent) {$/;"	f
+vueReplacer	rollup-plugins/vue-replace.js	/^function vueReplacer(opts = {}) {$/;"	f
+watch	cli-actions/simulator.js	/^function watch() {$/;"	f

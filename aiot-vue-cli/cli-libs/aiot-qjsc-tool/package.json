@@ -1,0 +1,16 @@
+{
+  "name": "aiot-qjsc-tool",
+  "version": "0.0.9",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "aiot-qjsc": "./index.js"
+  },
+  "publishConfig": {},
+  "dependencies": {
+    "commander": "^6.1.0"
+  }
+}

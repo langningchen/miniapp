@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Weex Preview</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="format-detection" content="telephone=no, email=no">
+  <style>
+    @font-face {
+      font-family: falcon-icons;
+      src: url(assets/falcon-icons.ttf) format("truetype");
+      font-weight: 400;
+      font-display: "auto";
+      font-style: normal
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #preview {
+      width: 100%;
+      height: 100%;
+    }
+
+    .header {
+      height: 100px;
+      flex-grow: 0;
+    }
+
+    .content {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: row;
+    }
+
+    .main {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+    }
+
+    .main>iframe {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <style id="_phantom-limb_default-style">
+    ._phantom-limb,
+    ._phantom-limb a {
+      cursor: none !important;
+    }
+
+    ._phantom-limb_finger {
+      background: rgba(128, 128, 128, 0.5);
+      border: 2px solid rgb(128, 128, 128);
+      border-radius: 50%;
+      display: none;
+      height: 20px;
+      margin: -10px 0 0 -10px;
+      pointer-events: none;
+      position: fixed;
+      width: 20px;
+      z-index: 999999
+    }
+
+    ._phantom-limb ._phantom-limb_finger {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content center">
+    <main class="main" id="main">
+    </main>
+  </div>
+</body>
+<% if (!htmlWebpackPlugin.options.isWebBuild) { %>
+  <script src="/webpack-dev-server.js"></script>
+  <% } %>
+  <script type="module" src="falcon-js-web.js"></script>
+  <script type="module" src="manifest.js" defer></script>
+  <script src="_dll_vendor.js"></script>
+  <script type="module" src="app.web.js" defer></script>
+</html>
