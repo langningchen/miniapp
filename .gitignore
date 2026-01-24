@@ -7,3 +7,4 @@ jsapi/include
 jsapi/build
 jsapi/toolchains
 jsapi/src/IME/rawdict_data.hpp
+test/
