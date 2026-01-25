@@ -23,7 +23,7 @@ export default {};
     },
     async transform(code, id) {
       // console.log('transform:', id);
-    }
+    },
   };
 }
 

@@ -1,9 +1,7 @@
-const utils = require('./utils')
-const config = require('./config')
-const isProduction = process.env.NODE_ENV === 'production'
-const sourceMapEnabled = isProduction
-  ? config.prod.productionSourceMap
-  : config.dev.cssSourceMap
+const utils = require('./utils');
+const config = require('./config');
+const isProduction = process.env.NODE_ENV === 'production';
+const sourceMapEnabled = isProduction ? config.prod.productionSourceMap : config.dev.cssSourceMap;
 
 module.exports = (options) => {
   return {
@@ -21,7 +19,7 @@ module.exports = (options) => {
     cssSourceMap: sourceMapEnabled,
     cacheBusting: config.dev.cacheBusting,
     lang: {
-      'less': ['less-loader']
-    }
-  }
-}
+      less: ['less-loader'],
+    },
+  };
+};

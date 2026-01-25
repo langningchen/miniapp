@@ -3,7 +3,7 @@ const appInfo = require('../../libs/appinfo');
 const helper = require('./helper');
 const ip = require('ip').address();
 const ROOT = helper.projectRoot();
-const webPaths = require('../../../web-libs/web-index.js')
+const webPaths = require('../../../web-libs/web-index.js');
 
 const config = {
   root: ROOT,
@@ -29,7 +29,7 @@ const config = {
     contentBase: [
       path.resolve(__dirname, '../'),
       path.resolve(webPaths['falcon-jsfm/dist']),
-      path.resolve(appInfo.getAppRoot(), '.temp')
+      path.resolve(appInfo.getAppRoot(), '.temp'),
     ],
     host: ip,
     port: 8081,
@@ -40,9 +40,9 @@ const config = {
     watchOptions: {
       ignored: /node_modules(?!(\/|\\).*(weex|falcon).*)/,
       aggregateTimeout: 300,
-      poll: false
+      poll: false,
     },
-        /**
+    /**
      * Source Maps
      */
     // https://webpack.js.org/configuration/devtool/#development
@@ -77,10 +77,10 @@ const config = {
             }
           })
         </script>
-        `
+        `,
     },
   },
-  "web-build": {
+  'web-build': {
     env: JSON.stringify('production'),
     /**
      * Source Maps
@@ -88,7 +88,7 @@ const config = {
     productionSourceMap: false,
     // https://webpack.js.org/configuration/devtool/#production
     devtool: 'none',
-    cssSourceMap: false
+    cssSourceMap: false,
   },
   nodeConfiguration: {
     global: false,
@@ -130,7 +130,7 @@ const config = {
     url: false,
     util: false,
     vm: false,
-    zlib: false
-  }
-}
+    zlib: false,
+  },
+};
 module.exports = config;

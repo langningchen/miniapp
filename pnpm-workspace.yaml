@@ -1,7 +1,9 @@
 packages:
-  - 'ui'
-  - 'aiot-vue-cli'
+  - ui
+  - aiot-vue-cli
 
 onlyBuiltDependencies:
+  - core-js
   - es5-ext
+  - less
   - uglifyjs-webpack-plugin

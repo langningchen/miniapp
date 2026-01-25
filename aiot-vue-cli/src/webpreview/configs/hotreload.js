@@ -3,13 +3,13 @@ const clients = [];
 
 class WsServer {
   constructor(wsport) {
-    this.clients = []
-    this.startWebSocket(wsport)
+    this.clients = [];
+    this.startWebSocket(wsport);
   }
 
   startWebSocket(wsport) {
     let wss = new WebSocket.Server({
-      port: wsport
+      port: wsport,
     });
 
     wss.on('connection', (ws) => {
@@ -39,7 +39,7 @@ class WsServer {
         }
       });
     });
-    
+
     this.wss = wss;
     return wss;
   }
@@ -67,4 +67,4 @@ class WsServer {
   }
 }
 
-module.exports = WsServer
+module.exports = WsServer;

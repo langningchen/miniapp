@@ -1,7 +1,7 @@
 /**
  * 对所有js做处理
  * 封装成function(Vue, Weex).把全局变量传入进去
- */ 
+ */
 
 function globalWrap(opts = {}) {
   return {
@@ -23,7 +23,7 @@ export default {};
     },
     async transform(code, id) {
       // console.log('transform:', id);
-    }
+    },
   };
 }
 

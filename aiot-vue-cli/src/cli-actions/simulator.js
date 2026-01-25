@@ -8,7 +8,6 @@ const path = require('path');
 const info = require('../libs/appinfo');
 const build = require('../steps/build');
 const log = require('../libs/log');
-const uploadCliActivity = require('./utils/UploadInfo')
 
 let uiProcess = null;
 let simulator = null;
@@ -17,7 +16,7 @@ async function run(page) {
   try {
     const args = [info.getFalconBuildDir()];
     if (page) {
-      args.push(page)
+      args.push(page);
     } else if (simulator && simulator.page) {
       args.push(simulator.page);
     }
@@ -34,7 +33,7 @@ async function run(page) {
 }
 
 function exec(cmd, args) {
-  console.log(`${cmd} ${args.join(' ')}`)
+  console.log(`${cmd} ${args.join(' ')}`);
   let spawn = childProcess.spawn(cmd, args, {
     cwd: simulator.path,
     stdio: ['pipe', 'inherit', 'inherit'],
@@ -74,8 +73,8 @@ function refresh() {
     console.warn('ui process is null!');
     return;
   }
-  const cmd = `relaunch ${info.getFalconBuildDir()} ${(simulator.page || '')}\n`;
-  console.log('refresh cmd')
+  const cmd = `relaunch ${info.getFalconBuildDir()} ${simulator.page || ''}\n`;
+  console.log('refresh cmd');
   uiProcess.stdin.write(cmd);
 }
 
@@ -86,8 +85,7 @@ function deleteBinFiles(folderPath) {
   if (forlder_exists) {
     let fileList = fs.readdirSync(folderPath);
     fileList.forEach(function (fileName) {
-      if (fileName.endsWith('.bin'))
-        fs.unlinkSync(path.join(folderPath, fileName));
+      if (fileName.endsWith('.bin')) fs.unlinkSync(path.join(folderPath, fileName));
     });
   }
 }
@@ -101,8 +99,8 @@ function watch() {
       clearTimeout(buildTimerId);
     }
     buildTimerId = setTimeout(async () => {
-      deleteBinFiles(path.resolve(info.getAppRoot(), '.falcon_'))
-      await build({ minify: false, mock: true })
+      deleteBinFiles(path.resolve(info.getAppRoot(), '.falcon_'));
+      await build({ minify: false, mock: true });
       refresh();
       buildTimerId = 0;
     }, BUILD_INTERVAL);
@@ -110,16 +108,13 @@ function watch() {
 }
 
 module.exports = async function (command) {
-  // 上报simulator埋点
-  uploadCliActivity('activity', 'launch_simulator')
-
   const path = command.simpath;
   const page = command.page;
   if (!info.isValidRoot()) {
-    return -1
+    return -1;
   }
   simulator = info.getAppPackageInfo().simulator;
-  if (typeof (path) !== "undefined" && path !== "" && path !== null) {
+  if (typeof path !== 'undefined' && path !== '' && path !== null) {
     simulator.path = path;
   }
   console.log(simulator);
@@ -137,10 +132,9 @@ module.exports = async function (command) {
     return;
   }
 
-
   // 首次运行的时候先build一次,解决首次预览找不到路径问题
-  await build({ minify: false, mock: true })
+  await build({ minify: false, mock: true });
 
   run(page);
   watch();
-}
+};
