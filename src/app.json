@@ -1,0 +1,20 @@
+{
+  "pages": {
+    "index": "pages/index/index.vue",
+    "ai": "pages/ai/ai.vue",
+    "softKeyboard": "pages/softKeyboard/softKeyboard.vue",
+    "aiSettings": "pages/aiSettings/aiSettings.vue",
+    "aiHistory": "pages/aiHistory/aiHistory.vue",
+    "aiNav": "pages/aiNav/aiNav.vue"
+  },
+  "options": {
+    "style": {
+      "lessPaths": [
+        "styles"
+      ]
+    },
+    "external": [
+      "langningchen"
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 packages:
-  - ui
-  - aiot-vue-cli
+  - '.'
+  - 'packages/*'
 
 onlyBuiltDependencies:
   - core-js

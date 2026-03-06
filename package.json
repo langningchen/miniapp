@@ -1,0 +1,30 @@
+{
+  "name": "toolbox",
+  "appName": "工具箱2",
+  "appid": "8001749644971194",
+  "version": "0.0.1",
+  "description": "一个方便用户使用的工具箱",
+  "icon": "app_icon.png",
+  "quickjs": {
+    "version": "20200705",
+    "bigNum": false
+  },
+  "single-js-bundle": false,
+  "scripts": {
+    "build": "./tools/build.sh"
+  },
+  "keywords": [
+    "iot",
+    "miniapp"
+  ],
+  "dependencies": {
+    "aiot-vue-cli": "link:packages/aiot-vue-cli",
+    "falcon-ui": "^2.0.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^12.3.0",
+    "@vue/compiler-sfc": "^3.5.29",
+    "vue": "^3.5.29"
+  },
+  "packageManager": "pnpm@10.12.4"
+}

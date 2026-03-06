@@ -1,6 +1,6 @@
 **/node_modules
-ui/.*
-ui/libs
+.*
+libs
 **/*.amr
 jsapi/lib
 jsapi/include

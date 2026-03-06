@@ -15,8 +15,8 @@ rem
 rem You should have received a copy of the GNU General Public License
 rem along with miniapp.  If not, see <https://www.gnu.org/licenses/>.
 
-adb -s 7E92000008705369 push Z:\home\langningchen\miniapp\dist\miniapp-arm-buildroot-linux-gnueabihf.amr /userdisk/Favorite/miniapp.amr & adb -s 7E92000008705369 shell miniapp_cli install /userdisk/Favorite/miniapp.amr & adb -s 7E92000008705369 shell miniapp_cli start 8001749644971193
-adb -s 7E92000008705369 shell cat /userdata/applog/DictPen_*.log
-adb -s 7E92000008705369 pull /userdisk/database/langningchen-ai.db langningchen-ai.db
-adb -s 7E92000008705369 push langningchen-ai.db /userdisk/database/langningchen-ai.db
-adb -s 7E92000008705369 shell rm /userdisk/database/langningchen-ai.db
+adb push Z:\home\langningchen\miniapp\8001749644971194.0_0_1.amr /userdisk/Favorite/miniapp2.amr & adb shell miniapp_cli install /userdisk/Favorite/miniapp2.amr & adb shell miniapp_cli start 8001749644971194
+adb shell cat /userdata/applog/DictPen_*.log
+adb pull /userdisk/database/langningchen-ai.db langningchen-ai.db
+adb push langningchen-ai.db /userdisk/database/langningchen-ai.db
+adb shell rm /userdisk/database/langningchen-ai.db

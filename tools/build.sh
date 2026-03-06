@@ -44,8 +44,8 @@ function log_verbose() {
 function create_directories() {
     log_info "Creating necessary directories..."
     
-    if ! mkdir -p ui/libs; then
-        log_error "Failed to create ui/libs directory"
+    if ! mkdir -p libs; then
+        log_error "Failed to create libs directory"
         return 1
     fi
     
@@ -99,8 +99,8 @@ function build_native() {
     fi
     
     log_verbose "Copying shared library..."
-    if ! cp jsapi/build/libjsapi_langningchen.so ui/libs/; then
-        log_error "Failed to copy libjsapi_langningchen.so to ui/libs/"
+    if ! cp jsapi/build/libjsapi_langningchen.so libs/; then
+        log_error "Failed to copy libjsapi_langningchen.so to libs/"
         return 1
     fi
     
@@ -111,7 +111,7 @@ function build_native() {
 function package_ui() {
     log_info "Packaging UI..."
     
-    if ! pnpm -C ui package; then
+    if ! pnpm exec aiot-cli build; then
         log_error "UI packaging failed"
         return 1
     fi
@@ -123,9 +123,9 @@ function package_ui() {
 function create_distribution() {
     log_info "Creating final distribution..."
     
-    local amr_file=$(find ui -name "800*.amr")
+    local amr_file=$(find . -name "800*.amr")
     if [ -z "$amr_file" ]; then
-        log_error "No AMR file found matching pattern '800*.amr' in ui directory"
+        log_error "No AMR file found matching pattern '800*.amr' in directory"
         return 1
     fi
     
